@@ -1,7 +1,7 @@
 ## Customize dependencies
 dependencies:
   pre:
-    - yes y | sudo add-apt-repository ppa:octave/stable && sudo apt-get update && sudo apt-get -y install octave
+    - yes y | sudo add-apt-repository ppa:octave/stable && sudo apt-get update && sudo apt-get -y install octave liboctave-dev
     - octave --eval "pkg install -forge -auto io statistics"
 ## Customize test commands
 test:
